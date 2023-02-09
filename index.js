@@ -20,12 +20,17 @@ function nextImage() {
 function prevImage() {
   const activeSlide = document.querySelector('.active');
   activeSlide.classList.remove('active');
+  const currentDot = document.querySelector('.dot.active');
+  currentDot.classList.remove('active');
   let prevSlide = activeSlide.previousElementSibling;
+  let prevDot = currentDot.previousElementSibling;
   if (!prevSlide) {
     prevSlide = document.querySelector('.slide:last-of-type');
+    prevDot = document.querySelector('.dot:last-of-type');
   }
 
   prevSlide.classList.add('active');
+  prevDot.classList.add('active');
 }
 
 function renderImageSlider(images) {
