@@ -1,0 +1,110 @@
+.image-frame {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure:not(.active) {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+figure.active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+figure img {
+    width: 50vw;
+    height: auto;
+}
+
+.slider-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    padding: 0;
+    font-size: 2.5em;
+    border: none;
+}
+
+#prev {
+    border-radius: 0 50% 50% 0;
+    padding-right: 0.3em;
+    left: 0;
+}
+
+#next {
+    border-radius: 50% 0 0 50%;
+    padding-left: 0.3em;
+    right: 0;
+}
+
+.dots {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.dot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: .8;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dot.active {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .slider-button {
+        width: 30px;
+        height: 50px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px 0 5px;
+    }
+
+    .dot.active {
+        width: 18px;
+        height: 18px;
+    }
+}

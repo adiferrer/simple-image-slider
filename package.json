@@ -1,0 +1,32 @@
+{
+  "name": "@jeanneferrer/image-slider",
+  "version": "1.0.0",
+  "description": "Customizable image slider with fade effect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiferrer/simple-image-slider.git"
+  },
+  "keywords": [
+    "slider",
+    "image",
+    "slides",
+    "slides",
+    "fade",
+    "animation",
+    "simple",
+    "picture",
+    "slide",
+    "picture",
+    "slideshow"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adiferrer/simple-image-slider/issues"
+  },
+  "homepage": "https://github.com/adiferrer/simple-image-slider#readme"
+}
